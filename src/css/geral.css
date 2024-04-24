@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "MeRegular";
+    src: url(./../../assets/fonts/MonumentExtended-Regular.otf);
+}
+
+@font-face {
+    font-family: "MeBold";
+    src: url(./../../assets/fonts/MonumentExtended-Ultrabold.otf);
+}
+
+
+:root{
+    --cor1: #191919;
+    --cor2: #d8001a;
+    --cor3: #444;
+    --cor4: #fff;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1,h2,h3,h4{
+    font-family: "MeRegular", Arial, Helvetica, sans-serif;
+}
+
+ol,ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.banner{
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo{
+    position: absolute;
+    top: -10;
+    left: 80px;
+}
+
+.logo-image{
+    width: 200px;
+}
+
+.boxfit{
+    width: 100px;
+}
+
+.first-header{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fh-list{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+}
+
+.item-container{
+    padding: .6rem 1rem;
+    border-radius: 50px;
+    transition: all .5s ease;
+}
+
+.item-container:hover{
+    background-color: white;
+    text-decoration: underline;
+}
+
+.item-container:hover:not(.item-destaque){
+    transform: translateY(-5px);
+}
+
+.item-destaque{
+    background-color: black;
+    color: var(--cor4); 
+    font-size: .8rem;
+    font-weight: bolder;
+    border: 3px solid black;
+    transition: all .5s ease;
+}
+
+.item-destaque:hover{
+    color: var(--cor1);
+}
+
+.intro{
+    background-color: transparent;
+    text-align: center;
+    width: 60%;
+    margin: 100px auto;
+    padding: 5rem 3rem;
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 80%);
+    transition: all 1s ease;
+}
+
+.intro-img{
+    width: 
+    700px;
+}
+
+.intro-title{
+    font-size: 4rem;
+}
+
+.intro-sub{
+    opacity: 0;
+}
+
+.slider{
+    overflow: hidden;
+    width: 400px;
+    position: relative;
+}
+
+.radio{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.slider  .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 500ms ease;
+}
+
+.slider  .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.contato{   
+    background: url(../../assets/images/fundo.jpg) no-repeat center center;
+    background-size: cover;
+    font-size: 1.2rem;
+    height: 100vh;
+}
+
+.contato-fade{
+    background-color: rgba(0, 0, 0, 0.801);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato-content{
+    color: white;
+    height: 90%;
+}
+
+.contato-content h2{
+    font-size: 2rem;
+    border-bottom: 1px solid;
+}
+
+.center{
+    text-align: center;
+}
+
+.meio-contato{
+    padding-top: 1rem;
+}

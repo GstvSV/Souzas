@@ -1,0 +1,134 @@
+
+.banner{
+    background: url(../../assets/images/lp-background.jpg) no-repeat top left;
+}
+
+.sobre{
+    width: 80%;
+    padding: 200px 100px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-imagem img{
+    width: 400px;
+    border-radius: 40px;
+}
+
+.slider{
+    border-radius: 40px;
+}
+
+.sobre-content{
+    width: 50%;
+}
+
+.sobre-content h2{
+    font-size: 3rem;
+}
+
+.vermelho {
+    color: var(--cor2);
+}
+
+.caracteristicas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.carac-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.carac-item{
+    width: 75px;
+    height: 75px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carac-item:hover{
+    transform: scale(1.2);
+    
+}
+
+.carac-container p{
+    font-size: 1.3rem;
+}
+
+.jobs{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.jobs h2{
+    color: var(--cor2);
+    width: 200px;
+    font-size: 1.8rem;
+}
+
+.jobs img{
+    width: 200px;
+    max-width: 350px;
+    height: 100%;
+}
+
+.jobs a:hover{
+    transform: translateY(-10px);
+}
+
+.produtos{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produtos h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.categorias{
+    font-size: 1.5rem;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoria{
+    border: 3px solid black;
+    width:200px;
+    height: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    transition: all .1s ease;  
+    
+}
+
+.categoria h3{
+    text-align: center;
+    color: var(--cor3);
+    transition: color 2s ease;
+}
+
+.contato-content h2,
+.contato-content h3{
+    color: var(--cor2);
+}

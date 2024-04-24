@@ -1,0 +1,89 @@
+.banner{
+    background: url(../../assets/images/livre.jpg) no-repeat top left;
+}
+
+.slider{
+    height: 400px;
+}
+
+.slider-item img{
+    width: 400px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.produtos-container{
+    width: 50%;
+}
+
+.produtos{
+    padding: 15px;
+    
+    cursor: pointer;
+}
+
+.prod-title{
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.produtos h3{
+    margin: 0;
+    width: fit-content;
+}
+
+.seta{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.parte{
+    display: block;
+    background-color: black;
+    width: 10px;
+    height: 2px;
+}
+
+.cima{
+    transform: translate(0px, 2px) rotate(45deg);
+}
+
+.baixo{
+    transform: rotate(-45deg);
+}
+
+.content{
+    opacity: 0;
+    max-height: 0;
+    display: none;
+    transition: all .3s ease;
+}
+
+.innerContent{
+    padding: 10px 0 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid black;
+}
+
+.innerContent img{
+    width: 100px;
+}
+
+.innerContent:hover{
+    background-color: lightgrey;
+}
