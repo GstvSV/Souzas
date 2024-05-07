@@ -21,6 +21,7 @@
 
 .sobre-content{
     width: 50%;
+    font-size: 1.3rem;
 }
 
 .sobre-content h2{
@@ -118,8 +119,7 @@
     display: flex;
     justify-content: center;
     align-items: center;  
-    transition: all .1s ease;  
-    
+    transition: all .5s ease;  
 }
 
 .categoria h3{

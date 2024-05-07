@@ -1,0 +1,82 @@
+@media (max-width: 1000px){
+    .boxfit{
+        min-width: 200px;
+    }
+
+    .fh-list{
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        transform: translateX(100%);
+        flex-direction: column;
+        background-color: rgb(255, 255, 255, .95);
+        padding: 90px 20px 0 0;
+        width: 200px;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 20px;
+        z-index: 2;
+        transition: all .5s ease;
+    }
+
+    .ham-menu{
+        display: flex;
+    }
+
+    .sobre{
+        gap: 70px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 800px){
+
+    .sobre{
+        flex-direction: column;
+        width: 400px;
+        padding-top: 50px;
+    }
+
+    .sobre-content{
+        text-align: center;
+        width: 100%;
+    }
+
+    .sobre-imagem{
+        width: 400px;
+        order: 2;
+    }
+
+    .caracteristicas{
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 100px;
+    }
+
+    .carac-container{
+        padding-bottom: 0;
+    }
+
+    .produtos h2{
+        text-align: center;
+    }
+
+    .contato{
+        height: fit-content;
+    }
+
+    .contato-fade{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mapa, .mapa iframe{
+        width: 400px;
+    }
+
+
+}
