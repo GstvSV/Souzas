@@ -32,6 +32,16 @@
 
 @media (max-width: 800px){
 
+    .intro{
+        width: 400px;
+        padding: 3rem 0;
+        margin-top: 200px;
+    }
+
+    .intro img{
+        width: 350px;
+    }
+
     .sobre{
         flex-direction: column;
         width: 400px;
