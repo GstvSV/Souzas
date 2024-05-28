@@ -17,7 +17,6 @@ menu.addEventListener("click", () => {
         partes.forEach((parte,i) => {
             parte.style.backgroundColor = "var(--cor2)";
         })
-        
     }else{
         meio.style.display = "block";
         cima.style.transform = "translateY(0) rotate(0)";
@@ -26,16 +25,23 @@ menu.addEventListener("click", () => {
         partes.forEach((parte,i) => {
             parte.style.backgroundColor = "var(--cor1)";
         })
-        
     }
+
+    console.log(menuOpen);
 })
 
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth >= 800) {
+    if (window.innerWidth >= 1000) {
         fhlist.style.transform = 'translateX(0)';
+    }else{
         menuOpen = false;
-    } else if (!menuOpen) {
-        fhlist.style.transform = 'translateX(-100%)';
+        fhlist.style.transform = 'translateX(0)';
+        cima.style.transform = "translateY(0) rotate(0)";
+        baixo.style.transform = "translateY(0) rotate(0)";
+        fhlist.style.transform = "translateX(100%)";
+        partes.forEach((parte,i) => {
+            parte.style.backgroundColor = "var(--cor1)";
+        })
     }
 });
