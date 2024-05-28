@@ -32,10 +32,15 @@
 
 @media (max-width: 800px){
 
+    body{
+        overflow-x: hidden;
+    }
+
     .intro{
         width: 400px;
         padding: 3rem 0;
         margin-top: 200px;
+        
     }
 
     .intro img{
