@@ -1,6 +1,7 @@
 
 .banner{
     background: url(../../assets/images/lp-background.jpg) no-repeat top left;
+    overflow: hidden;
 }
 
 .sobre{
