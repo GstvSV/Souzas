@@ -29,9 +29,7 @@
     font-size: 3rem;
 }
 
-.vermelho {
-    color: var(--cor2);
-}
+
 
 .caracteristicas{
     display: flex;
@@ -129,7 +127,3 @@
     transition: color 2s ease;
 }
 
-.contato-content h2,
-.contato-content h3{
-    color: var(--cor2);
-}

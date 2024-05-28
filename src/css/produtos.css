@@ -1,5 +1,5 @@
 .banner{
-    background: url(../../assets/images/livre.jpg) no-repeat top left;
+    background: url(../../assets/images/produtos.jpg) no-repeat top left;
 }
 
 .slider{
@@ -22,8 +22,7 @@
 }
 
 .produtos{
-    padding: 15px;
-    
+    padding: 15px; 
     cursor: pointer;
 }
 
@@ -40,9 +39,9 @@
     width: fit-content;
 }
 
-.seta{
-    width: 10px;
-    height: 10px;
+.arrow{
+    width: 30px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,19 +49,23 @@
     transition: all .3s ease;
 }
 
-.parte{
+.arrowParte{
     display: block;
     background-color: black;
-    width: 10px;
-    height: 2px;
+    width: 20px;
+    height: 4px;
 }
 
-.cima{
-    transform: translate(0px, 2px) rotate(45deg);
+.esq{
+    transform: translate(0px, 8px) rotate(45deg);
 }
 
-.baixo{
-    transform: rotate(-45deg);
+.dir{
+    transform: translate(0px, -6px) rotate(-45deg);
+}
+
+.slider{
+    border-radius: 40px;
 }
 
 .content{
@@ -78,12 +81,15 @@
     align-items: center;
     gap: 20px;
     border-bottom: 2px solid black;
+    transition: color .5s ease;
 }
 
-.innerContent img{
-    width: 100px;
+.innerContent h4{
+    padding-left: 50px;
+    font-size: .9rem;
 }
 
 .innerContent:hover{
     background-color: lightgrey;
+    color: var(--cor2);
 }

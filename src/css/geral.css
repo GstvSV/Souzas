@@ -44,6 +44,15 @@ a{
     text-decoration: none;
 }
 
+.vermelho {
+    color: var(--cor2);
+}
+
+.contato-content h2,
+.contato-content h3{
+    color: var(--cor2);
+}
+
 .banner{
     background-size: cover;
     height: 100vh;

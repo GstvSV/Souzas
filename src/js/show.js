@@ -1,5 +1,5 @@
 
-const setas = document.querySelectorAll(".seta");
+const setas = document.querySelectorAll(".arrow");
 const titulos = document.querySelectorAll(".prod-title");
 const conteudo = document.querySelectorAll(".content");
 

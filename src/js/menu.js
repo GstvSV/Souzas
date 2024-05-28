@@ -5,10 +5,11 @@ const cima = document.querySelector(".cima");
 const meio = document.querySelector(".meio");
 const baixo = document.querySelector(".baixo");
 const fhlist = document.querySelector(".fh-list");
-let controle = 0
+let menuOpen = false;
 
 menu.addEventListener("click", () => {
-    if(controle === 0){
+    menuOpen = !menuOpen;
+    if(menuOpen){
         meio.style.display = "none";
         cima.style.transform = "translateY(10px) rotate(45deg) ";
         baixo.style.transform = "translateY(-10px) rotate(-45deg)";
@@ -16,7 +17,7 @@ menu.addEventListener("click", () => {
         partes.forEach((parte,i) => {
             parte.style.backgroundColor = "var(--cor2)";
         })
-        controle = 1;
+        
     }else{
         meio.style.display = "block";
         cima.style.transform = "translateY(0) rotate(0)";
@@ -25,8 +26,16 @@ menu.addEventListener("click", () => {
         partes.forEach((parte,i) => {
             parte.style.backgroundColor = "var(--cor1)";
         })
-        controle = 0;
+        
     }
-
-
 })
+
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 800) {
+        fhlist.style.transform = 'translateX(0)';
+        menuOpen = false;
+    } else if (!menuOpen) {
+        fhlist.style.transform = 'translateX(-100%)';
+    }
+});
