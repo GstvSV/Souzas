@@ -44,10 +44,12 @@ menu.addEventListener("click", () => {
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 1000) {
         fhlist.style.transform = 'translateX(0)';
+        fhlist.style.display = 'flex';
     }else{
         menuOpen = false;
         fhlist.style.transform = 'translateX(0)';
         cima.style.transform = "translateY(0) rotate(0)";
+        meio.style.display = "block"
         baixo.style.transform = "translateY(0) rotate(0)";
         fhlist.style.transform = "translateX(100%)";
         partes.forEach((parte,i) => {

@@ -1,0 +1,98 @@
+.banner{
+    height: fit-content;
+}
+
+.first-header{
+    background-color: rgb(211, 211, 211, .6);
+    box-shadow: 0 3px 10px black;
+}
+
+#produto {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#produto h1{
+    font-size: 2.5rem;
+    color: var(--cor2);
+    width: 100%;
+}
+
+#produto h2{
+    font-size: 1.5rem;
+    color: var(--cor3);
+}
+
+.prod-mods{
+    max-width: 40%;
+}
+
+.mod{
+    height: 50%;
+}
+
+.prod-fotos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cssel{
+    overflow: hidden;
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cssel-content{
+    display: flex;
+    flex-wrap: nowrap;
+    transition: all 500ms ease;
+}
+
+.cssel  .cssel-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider-item img{
+    width: 600px;
+    height: 100%;
+}
+
+.options{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+}
+.mod-p span{
+    text-transform: uppercase;
+}
+
+.dados{
+    width: 50%;
+}
+
+.orcamento{
+    margin-top: 50px;
+    width: 40%;
+}
+
+.orcamento a{
+    display: flex;
+}
+
+.orcamento a:hover{
+    color: var(--cor2);
+}
+
+.orcamento img{
+    width: 50px;
+}
+

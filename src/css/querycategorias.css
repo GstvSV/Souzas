@@ -1,0 +1,45 @@
+@media (max-width: 1000px){
+
+
+    #produto{
+        flex-direction: column;
+    }
+
+    #produto h1{
+        font-size: 2rem;
+        order: -2;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .prod-mods{
+        max-width: 100%;
+    }
+
+    .prod-fotos{
+        margin: auto;
+        width: fit-content;
+        order: -1;
+    }
+
+    .cssel{
+        width: 300px;
+    }
+
+    .slider-item img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .dados{
+        width: 100%;
+    }
+
+    .orcamento{
+        width: 100%;
+        margin: 0;
+    }
+
+}

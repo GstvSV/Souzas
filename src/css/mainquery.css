@@ -18,6 +18,7 @@
         gap: 20px;
         z-index: 2;
         transition: all .5s ease;
+        display: none;
     }
 
     .ham-menu{
@@ -40,6 +41,23 @@
     .produtos-container{
         width: 100%;
     }
+
+    .contato{
+        height: fit-content;
+    }
+
+    .contato-fade{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mapa, .mapa iframe{
+        width: 400px;
+    }
+
 }
 
 
@@ -92,21 +110,7 @@
         text-align: center;
     }
 
-    .contato{
-        height: fit-content;
-    }
-
-    .contato-fade{
-        width: 100%;
-        height: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .mapa, .mapa iframe{
-        width: 400px;
-    }
+    
 
 
 }

@@ -80,7 +80,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border-bottom: 2px solid black;
+
     transition: color .5s ease;
 }
 
